@@ -35,6 +35,29 @@ module.exports = {
                 })
                 res.json(newRecipes)
             })
+    },
+    create: (req, res) => {
+        console.log(req)
+        Recipes.create(req.body)
+            .then(recipes => {
+                console.log(req.body)
+                res.json(recipes)
+            })
+    },
+    edit: (req, res) => {
+        Recipes.findOneAndUpdate(
+            {title: req.params.name},
+            req.body,
+            {new:true})
+            .then(recipes => {
+                res.json(recipes)
+            })
+    },
+    delete: (req, res) => {
+        Recipes.findOneAndDelete({title: req.params.name})
+            .then(recipe => {
+                res.json(recipe)
+            })
     }
 
 }
