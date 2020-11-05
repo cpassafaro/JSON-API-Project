@@ -18,4 +18,12 @@ app.put("/recipe/:name", recipeController.edit);
 //delete a recipe
 app.delete("/remove/:name", recipeController.delete);
 
-app.listen(3000, () => console.log("Listening on port 3000"));
+app.set("port", process.env.PORT || 8080);
+
+
+app.listen(app.get("port"), () => {
+    console.log(`Check Port: ${app.get('port')}`)
+})
+
+
+
