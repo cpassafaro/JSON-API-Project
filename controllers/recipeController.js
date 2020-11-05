@@ -36,6 +36,12 @@ module.exports = {
                 res.json(newRecipes)
             })
     },
+    searchByTitle: (req, res) => {
+        Recipes.find({title: req.params.name})
+            .then(recipes => {
+                res.json(recipes)
+            })
+    },
     create: (req, res) => {
         console.log(req)
         Recipes.create(req.body)

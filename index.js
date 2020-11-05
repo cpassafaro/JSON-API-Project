@@ -9,6 +9,8 @@ app.use(bodyParser.json());
 app.get("/", recipeController.index);
 //find recipe by style of food
 app.get("/:name", recipeController.name);
+//find by the name
+app.get('/searchByTitle/:name', recipeController.searchByTitle)
 //create a new recipe
 app.post("/new", recipeController.create);
 //update a recipe

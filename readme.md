@@ -45,6 +45,7 @@ __Method__ | __Path__ | __Description__
 | ---------- | ---------| --------------- |
 | Get | localhost:3000/ | Gets all recipes in the user database | 
 | Get | localhost:3000/:name | Place the style of cuisine you would like to retreive and they will populate below |
+| Get | localhost:3000/searchByTitle/:name | Place the title of the recipe you are looking for in the name portion of this url (spaces included) |
 | Post | localhost:3000/new | This can create a new recipe via postman |
 | Put | localhost:3000/recipe/:name | Place the name of the recipe behind the recipe backslash to find a recipe and edit it |
 | Delete | localhost:3000/remove/:name | Place the name behind the remove backslach to find the recipe by name and remove that recipe |
