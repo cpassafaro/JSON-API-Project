@@ -1,6 +1,9 @@
 ### JSON API PROJECT
 ________________
 
+## Deployed Url
+https://bombrecipeapi.herokuapp.com/
+
 __Description__
 _______________
 
@@ -52,7 +55,13 @@ __Method__ | __Path__ | __Description__
 | Delete | localhost:3000/remove/:name | Place the name behind the remove backslach to find the recipe by name and remove that recipe |
 
 
+
+
 __Tools used: Postman__
+Postman was used to test out CRUD functionality to manipulate the db.
+
+__Installation Instructions__
+After cloning this repository run npm install to install all dependencies included in the package.json file. Users will also need to have mongodb established on their computer.
 
 
 
