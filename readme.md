@@ -10,8 +10,9 @@ __Development Process__
 
 __Date__ | __Progress__ | __Working On__ | 
 ----- | ---------- | --------- |
-| 11/2/2020| API connection attempting to be established so that information can be seeded into mongodb database. | API connection giving some issues |
-| 11/3/2020| API connection established and working. Filtered through a model and seeded into a local mongo database. Routes established through CRUD functinality. | Working on readme.
+| 11/3/2020| API connection attempting to be established so that information can be seeded into mongodb database. | API connection giving some issues |
+| 11/4/2020| API connection established and working. Filtered through a model and seeded into a local mongo database. Routes established through CRUD functinality. | Working on readme. |
+|11/5/2020 | Stylized Readme.md / working on deployment of API | NA |
 
 
 __API Accessibility__
