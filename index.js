@@ -1,10 +1,13 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 const recipeController = require("./controllers/recipeController");
 // const Recipes = require('./models/Recipes');
 const bodyParser = require("body-parser");
 
 app.use(bodyParser.json());
+
+app.use(cors());
 
 app.get("/", recipeController.index);
 //find recipe by style of food
