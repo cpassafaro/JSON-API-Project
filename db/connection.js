@@ -9,7 +9,7 @@ if(process.env.NODE_ENV === "production"){
     mongoURI = "mongodb://localhost/recipes"
 }
 
-mongoose.connect(mongoURI, { useNewUrlParser: true },{ useUnifiedTopology: true } );
+mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true } );
 
 
 module.exports = mongoose;

@@ -11,7 +11,7 @@ app.use(cors());
 
 app.get("/", recipeController.index);
 //find recipe by style of food
-app.get("/:name", recipeController.name);
+app.get("/searchByStyle/:name", recipeController.name);
 //find by the name
 app.get('/searchByTitle/:name', recipeController.searchByTitle)
 //create a new recipe
