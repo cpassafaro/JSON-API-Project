@@ -63,5 +63,8 @@ Postman was used to test out CRUD functionality to manipulate the db.
 __Installation Instructions__
 After cloning this repository run npm install to install all dependencies included in the package.json file. Users will also need to have mongodb established on their computer.
 
+__Deployment Application__
+Heroku 
+
 
 
